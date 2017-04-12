@@ -8,13 +8,72 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var searchText: UITextField!
     @IBOutlet var tableView: UITableView!
     
+    var searchResult: [Movie] = []
+    weak var delegate: ViewController!
+    
     @IBAction func search(sender: UIButton){
         print("Searching...")
+        var searchTerm = searchText.text!
+        if searchTerm.characters.count > 2 {
+            retrieveMoviesByTerm(searchTerm: searchTerm)
+        }
+    }
+    
+    @IBAction func addLike(sender: UIButton) {
+        print("Item #\(sender.tag) was selected as a favourite.")
+        self.delegate.favouriteMovies.append(searchResult[sender.tag])
+    }
+    
+    func retrieveMoviesByTerm(searchTerm: String) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return searchResult.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Search Result"
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let moviecell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath) as! CustomTableViewCell
+        
+        let idx: Int = indexPath.row
+        moviecell.likeButton?.tag = idx
+        moviecell.movieLabel?.text = searchResult[idx].title
+        moviecell.movieYear?.text = searchResult[idx].year
+        displayMovieImage(row: idx, moviecell: moviecell)
+        
+        return moviecell
+    }
+    
+    func displayMovieImage (row: Int, moviecell: CustomTableViewCell) {
+        let url: String = (URL(string: searchResult[row].imageUrl)?.absoluteString)!
+        URLSession.shared.dataTask(with: URL(string:url)!, completionHandler: {(data, response, error) -> Void in
+            if error != nil {
+                print(error!)
+                return
+            }
+            
+            DispatchQueue.main.async(execute: {
+                let image = UIImage(data: data!)
+                moviecell.movieImageView?.image = image
+            })
+        }).resume()
     }
     
     override func viewDidLoad() {

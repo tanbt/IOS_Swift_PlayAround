@@ -13,6 +13,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet var movieImageView: UIImageView!
     @IBOutlet var movieLabel: UILabel!
     @IBOutlet var movieYear: UILabel!
+    @IBOutlet var likeButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
