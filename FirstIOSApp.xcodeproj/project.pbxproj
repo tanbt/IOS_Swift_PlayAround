@@ -14,6 +14,7 @@
 		845F2E9B1E9D48F6000A82F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845F2E991E9D48F6000A82F9 /* LaunchScreen.storyboard */; };
 		845F2EA31E9D55E1000A82F9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F2EA21E9D55E1000A82F9 /* CustomTableViewCell.swift */; };
 		845F2EA51E9D5AF4000A82F9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F2EA41E9D5AF4000A82F9 /* Movie.swift */; };
+		84ECA57B1E9E9C2A00302DEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECA57A1E9E9C2A00302DEB /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		845F2E9C1E9D48F6000A82F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845F2EA21E9D55E1000A82F9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		845F2EA41E9D5AF4000A82F9 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		84ECA57A1E9E9C2A00302DEB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				845F2E9C1E9D48F6000A82F9 /* Info.plist */,
 				845F2EA21E9D55E1000A82F9 /* CustomTableViewCell.swift */,
 				845F2EA41E9D5AF4000A82F9 /* Movie.swift */,
+				84ECA57A1E9E9C2A00302DEB /* SearchViewController.swift */,
 			);
 			path = FirstIOSApp;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ECA57B1E9E9C2A00302DEB /* SearchViewController.swift in Sources */,
 				845F2EA31E9D55E1000A82F9 /* CustomTableViewCell.swift in Sources */,
 				845F2E931E9D48F6000A82F9 /* ViewController.swift in Sources */,
 				845F2EA51E9D5AF4000A82F9 /* Movie.swift in Sources */,
@@ -311,6 +315,7 @@
 				845F2EA11E9D48F6000A82F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
