@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840392731E9FBA5E004DADCF /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840392721E9FBA5E004DADCF /* HTTPHandler.swift */; };
+		840392751E9FBD85004DADCF /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840392741E9FBD85004DADCF /* JSONParser.swift */; };
+		840392771E9FC013004DADCF /* MovieDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840392761E9FC013004DADCF /* MovieDataProcessor.swift */; };
 		845F2E911E9D48F6000A82F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F2E901E9D48F6000A82F9 /* AppDelegate.swift */; };
 		845F2E931E9D48F6000A82F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F2E921E9D48F6000A82F9 /* ViewController.swift */; };
 		845F2E961E9D48F6000A82F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845F2E941E9D48F6000A82F9 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840392721E9FBA5E004DADCF /* HTTPHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHandler.swift; sourceTree = "<group>"; };
+		840392741E9FBD85004DADCF /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		840392761E9FC013004DADCF /* MovieDataProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDataProcessor.swift; sourceTree = "<group>"; };
 		845F2E8D1E9D48F6000A82F9 /* FirstIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845F2E901E9D48F6000A82F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845F2E921E9D48F6000A82F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				845F2EA21E9D55E1000A82F9 /* CustomTableViewCell.swift */,
 				845F2EA41E9D5AF4000A82F9 /* Movie.swift */,
 				84ECA57A1E9E9C2A00302DEB /* SearchViewController.swift */,
+				840392721E9FBA5E004DADCF /* HTTPHandler.swift */,
+				840392741E9FBD85004DADCF /* JSONParser.swift */,
+				840392761E9FC013004DADCF /* MovieDataProcessor.swift */,
 			);
 			path = FirstIOSApp;
 			sourceTree = "<group>";
@@ -147,8 +156,11 @@
 			files = (
 				84ECA57B1E9E9C2A00302DEB /* SearchViewController.swift in Sources */,
 				845F2EA31E9D55E1000A82F9 /* CustomTableViewCell.swift in Sources */,
+				840392751E9FBD85004DADCF /* JSONParser.swift in Sources */,
 				845F2E931E9D48F6000A82F9 /* ViewController.swift in Sources */,
 				845F2EA51E9D5AF4000A82F9 /* Movie.swift in Sources */,
+				840392771E9FC013004DADCF /* MovieDataProcessor.swift in Sources */,
+				840392731E9FBA5E004DADCF /* HTTPHandler.swift in Sources */,
 				845F2E911E9D48F6000A82F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
